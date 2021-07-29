@@ -1,0 +1,23 @@
+{
+  "name": "atom-autohotkey",
+  "version": "0.0.1",
+  "description": "AutoHotKey grammar, styles, and autocomplete",
+  "main": "./lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theusaf/Atom-AutoHotKey.git"
+  },
+  "keywords": [
+    "ahk",
+    "autohotkey"
+  ],
+  "author": "theusaf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theusaf/Atom-AutoHotKey/issues"
+  },
+  "homepage": "https://github.com/theusaf/Atom-AutoHotKey#readme"
+}
