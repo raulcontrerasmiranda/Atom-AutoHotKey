@@ -1,3 +1,5 @@
-const functions = require("./types/functions");
+const functions = require("./types/functions"),
+  directives = require("./types/directives");
 
-module.exports = functions;
+module.exports = functions
+  .concat(directives);
