@@ -27,7 +27,12 @@ patterns: [
   }
   # Operators
   {
-    match: "[-~&*+!.=,:?\\/<>|]{1,2}|(^|[^\\w])(and|AND|or|OR|new|NEW|not|NOT|ByRef)($|[^\\w])"
+    match: "[-~&*+!.=,:?\\/<>|%]{1,2}|(^|[^\\w])(and|AND|or|OR|new|NEW|not|NOT|ByRef)($|[^\\w])"
     name: ".ahk.keyword.operator"
+  }
+  # Built-in variables
+  {
+    match: "(^|[^\\w])(A_[A-Z]\\w+|[Cc]lipboard|ClipboardAll|ComSpec|ErrorLevel|ProgramFiles)($|[^\\w])"
+    name: ".ahk.definition.variable.built-in"
   }
 ]
