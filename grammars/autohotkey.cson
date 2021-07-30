@@ -22,7 +22,12 @@ patterns: [
   }
   # Directives
   {
-    match: "^\\s*#[^\\s]*",
+    match: "^\\s*#[^\\s]*"
     name: ".ahk.definition.directive"
+  }
+  # Operators
+  {
+    match: "[-~&*+!.=,:?\\/<>|]{1,2}|(^|[^\\w])(and|AND|or|OR|new|NEW|not|NOT|ByRef)($|[^\\w])"
+    name: ".ahk.keyword.operator"
   }
 ]

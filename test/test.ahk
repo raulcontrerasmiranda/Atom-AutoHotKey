@@ -13,3 +13,12 @@ This_is_a_function(foo, bar)
 */
 
 #ClipboardTimeout Milliseconds
+
+this and that
+??
+:=
+ NOT
+ or NOT
+you AND me ByRef foo
+ByRef
+ornot
