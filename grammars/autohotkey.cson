@@ -62,13 +62,18 @@ patterns: [
   }
   # Values
   {
-    match: "(?<=^|[^\\w])([Tt]rue|[Ff]alse|[0-9]+)(?=$|[^\\w])"
+    match: "(?<=^|[^\\w])(true|false|[0-9]+)(?=$|[^\\w])"
     name: ".ahk.definition.number"
   }
   # Declarations
   {
     match: "(^|[^\\w])(global|extends|class|static)($|[^\\w])"
     name: ".ahk.keyword.declaration"
+  }
+  # Control flow
+  {
+    match: "(^|[^\\w])(if|while|else|Until|Loop|[Pp]arse|Files|[Rread]|Reg|return|switch|case|default|between|contains|in|is|Goto|Gosub|for|finally|try|catch|continue|break)($|[^\\w])"
+    name: ".ahk.keyword.control"
   }
 ]
 repository: {

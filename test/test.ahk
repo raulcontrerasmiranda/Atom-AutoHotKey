@@ -31,3 +31,18 @@ A_CaretX
 class foo extends foo {
   bar
 }
+for a, b in c
+  c
+while (foo) {
+
+}
+if (condition) {
+  ;
+}
+if a between b and c
+  whee
+switch value {
+  case CaseValue:
+
+}
+Goto, lol
