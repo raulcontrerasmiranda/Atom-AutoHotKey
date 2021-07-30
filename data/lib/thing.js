@@ -56,6 +56,11 @@ class Thing {
     return this;
   }
 
+  matchesWith(string, line) {
+    const str = this.displayText ?? this.snippet ?? this.text ?? "";
+    return str.toLowerCase().indexOf(string.toLowerCase()) !== -1;
+  }
+
 }
 
 module.exports = Thing;
