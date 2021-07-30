@@ -4,6 +4,7 @@ class Operator extends Thing {
 
   constructor(name, keepCase) {
     super();
+    this.setType("operator");
     this.setText(name);
     this.setIcon("!");
     this.keepCase = !!keepCase;
