@@ -35,4 +35,47 @@ patterns: [
     match: "(^|[^\\w])(A_[A-Z]\\w+|[Cc]lipboard|ClipboardAll|ComSpec|ErrorLevel|ProgramFiles)($|[^\\w])"
     name: ".ahk.definition.variable.built-in"
   }
+  # Strings
+  {
+    match: "(\")([^\"]|[\"][\"])*(\")"
+    name: ".ahk.definition.string"
+    captures: {
+      0: {
+        patterns: [
+          {
+            include: "#string_escapes"
+          }
+        ]
+      }
+      1: {
+        name: ".ahk.definition.string.start"
+      }
+      3: {
+        name: ".ahk.definition.string.end"
+      }
+    }
+    patterns: [
+      {
+        include: "#string_escapes"
+      }
+    ]
+  }
 ]
+repository: {
+  string_escapes: {
+    patterns: [
+      {
+        match: "(`)([,%`;nrtvaf]|::)"
+        name: ".ahk.definition.escape"
+        captures: {
+          1: {
+            name: ".ahk.definition.escape.character"
+          }
+          2: {
+            name: ".ahk.definition.escape.body"
+          }
+        }
+      }
+    ]
+  }
+}
