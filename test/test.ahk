@@ -23,3 +23,6 @@ you AND me ByRef foo
 ByRef
 ornot
 "this is a `` `n string"
+true
+false
+12341 531847 -234892

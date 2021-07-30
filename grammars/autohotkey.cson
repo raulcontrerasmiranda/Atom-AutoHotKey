@@ -60,6 +60,11 @@ patterns: [
       }
     ]
   }
+  # Values
+  {
+    match: "(?<=^|[^\\w])([Tt]rue|[Ff]alse|[0-9]+)(?=$|[^\\w])"
+    name: ".ahk.definition.number"
+  }
 ]
 repository: {
   string_escapes: {
