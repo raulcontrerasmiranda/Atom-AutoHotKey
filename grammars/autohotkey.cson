@@ -22,7 +22,7 @@ patterns: [
   }
   # Directives
   {
-    match: "^\\s*#[^\\s]*"
+    match: "^\\s*#[A-Z][\\w]+"
     name: ".ahk.definition.directive"
   }
   # Operators
