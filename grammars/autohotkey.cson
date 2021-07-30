@@ -65,6 +65,11 @@ patterns: [
     match: "(?<=^|[^\\w])([Tt]rue|[Ff]alse|[0-9]+)(?=$|[^\\w])"
     name: ".ahk.definition.number"
   }
+  # Declarations
+  {
+    match: "(^|[^\\w])(global|extends|class|static)($|[^\\w])"
+    name: ".ahk.keyword.declaration"
+  }
 ]
 repository: {
   string_escapes: {

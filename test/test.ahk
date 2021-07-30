@@ -13,7 +13,7 @@ This_is_a_function(foo, bar)
 */
 
 #ClipboardTimeout Milliseconds
-
+Send, foo;bar ;bar
 this and that
 ??
 :=
@@ -28,3 +28,6 @@ false
 12341 531847 -234892
 Clipboard
 A_CaretX
+class foo extends foo {
+  bar
+}
