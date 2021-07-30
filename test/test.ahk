@@ -26,3 +26,5 @@ ornot
 true
 false
 12341 531847 -234892
+Clipboard
+A_CaretX
