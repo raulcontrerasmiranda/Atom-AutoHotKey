@@ -18,7 +18,7 @@ patterns: [
   # Functions
   {
     match: "([A-Z]([a-zA-Z_])+)(?=\\()"
-    name: ".ahk.definition.function.body"
+    name: ".ahk.definition.function"
   }
   # Directives
   {
