@@ -14,7 +14,5 @@ module.exports = [
   new Declaration("global", "global")
     .setDescription("To refer to an existing global variable inside a function (or create a new one), declare the variable as global prior to using it."),
   new Declaration("static", "static")
-    .setDescription("Static variables are always implicitly local, but differ from locals because their values are remembered between calls."),
-  new Declaration("extends", "extends")
-    .setDescription("Keyword to extend classes from other classes.")
+    .setDescription("Static variables are always implicitly local, but differ from locals because their values are remembered between calls.")
 ];
