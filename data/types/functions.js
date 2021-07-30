@@ -39,14 +39,14 @@ module.exports = [
     .setDescription("Retrieves type information from a COM object."),
   new Func("ComObjValue(${1:ComObject})")
     .setDescription("Retrieves the value or pointer stored in a COM wrapper object."),
-  new Func("Abs(${1:Number})")
-    .setDescription("Functions for performing various mathematical operations such as rounding, exponentiation, squaring, etc."),
+  new Func("Floor(${1:Number})")
+    .setDescription("Returns Number rounded down to the nearest integer (without any .00 suffix)."),
   new Func("DllCall($1)")
     .setDescription("Calls a function inside a DLL, such as a standard Windows API function."),
   new Func("Throw(${1:Expression})")
     .setDescription("Signals the occurrence of an error. This signal can be caught by a try-catch statement."),
-  new Func("Abs(${1:Number})")
-    .setDescription("Functions for performing various mathematical operations such as rounding, exponentiation, squaring, etc."),
+  new Func("Exp(${1:Number})")
+    .setDescription("Returns e (which is approximately 2.71828182845905) raised to the Nth power."),
   new Func("FileExist(${1:FilePattern})")
     .setDescription("Checks for the existence of a file or folder and returns its attributes."),
   new Func("FileOpen(${1:Filename}, ${2:Flags})")

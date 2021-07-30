@@ -1,5 +1,5 @@
 name: "AutoHotKey"
-scopeName: "atom-ahk"
+scopeName: ".source.atom-ahk"
 fileTypes: [
   "ahk"
 ]
@@ -12,7 +12,20 @@ patterns: [
   }
   # Line comments
   {
-    begin: ";",
+    match: ";.*"
     name: ".ahk.comment.line"
+  }
+  # Functions
+  {
+    match: "([A-Z]([a-zA-Z_])+)(\\(.*?\\))"
+    name: ".ahk.definition.function"
+    captures: {
+      1: {
+        name: ".ahk.definition.function.body"
+      }
+      3: {
+        name: ".ahk.definition.function.param"
+      }
+    }
   }
 ]

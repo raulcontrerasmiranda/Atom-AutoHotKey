@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/theusaf/Atom-AutoHotKey/issues"
   },
-  "homepage": "https://github.com/theusaf/Atom-AutoHotKey#readme"
+  "homepage": "https://github.com/theusaf/Atom-AutoHotKey#readme",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "4.0.0": "provide"
+      }
+    }
+  }
 }
