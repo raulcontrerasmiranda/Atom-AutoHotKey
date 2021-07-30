@@ -17,14 +17,11 @@ patterns: [
   }
   # Functions
   {
-    match: "([A-Z]([a-zA-Z_])+)(\\(.*?\\))"
+    match: "([A-Z]([a-zA-Z_])+)(?=\\()"
     name: ".ahk.definition.function"
     captures: {
       1: {
         name: ".ahk.definition.function.body"
-      }
-      3: {
-        name: ".ahk.definition.function.param"
       }
     }
   }
