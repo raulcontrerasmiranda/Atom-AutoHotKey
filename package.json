@@ -1,6 +1,6 @@
 {
   "name": "atom-autohotkey",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "AutoHotKey grammar, styles, and autocomplete",
   "main": "./lib/main.js",
   "scripts": {
