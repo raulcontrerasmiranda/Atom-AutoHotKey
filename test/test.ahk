@@ -46,3 +46,4 @@ switch value {
 
 }
 Goto, lol
+SendInput, 12345678

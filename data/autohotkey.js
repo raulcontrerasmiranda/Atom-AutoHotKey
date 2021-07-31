@@ -3,11 +3,13 @@ const functions = require("./types/functions"),
   operators = require("./types/operators"),
   variables = require("./types/variables"),
   declarations = require("./types/declarations"),
-  controls = require("./types/controls");
+  controls = require("./types/controls"),
+  commands = require("./types/commands");
 
 module.exports = functions
   .concat(directives)
   .concat(operators)
   .concat(variables)
   .concat(declarations)
-  .concat(controls);
+  .concat(controls)
+  .concat(commands);
