@@ -4,7 +4,8 @@ const functions = require("./types/functions"),
   variables = require("./types/variables"),
   declarations = require("./types/declarations"),
   controls = require("./types/controls"),
-  commands = require("./types/commands");
+  commands = require("./types/commands"),
+  keys = require("./types/keys");
 
 module.exports = functions
   .concat(directives)
@@ -12,4 +13,5 @@ module.exports = functions
   .concat(variables)
   .concat(declarations)
   .concat(controls)
-  .concat(commands);
+  .concat(commands)
+  .concat(keys);

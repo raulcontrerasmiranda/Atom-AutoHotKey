@@ -50,3 +50,11 @@ SendInput, 12345678
 
 #^::
 ::foo::bar
+:o:foo::bar
+A^::b
+
+this_is_a_label:
+
+%Var%
+
+WheelLeft::Right
