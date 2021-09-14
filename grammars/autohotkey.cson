@@ -15,11 +15,6 @@ patterns: [
     match: "((?:[\\s])|^);.*"
     name: ".ahk.comment.line"
   }
-  # Keys
-  {
-    match: "(?<=^|[^\\w])(LButton|RButton|MButton|XButton1|XButton2|WheelDown|WheelUp|WheelLeft|WheelRight|CapsLock|Space|Tab|Enter|Return|Escape|Esc|Backspace|BS|ScrollLock|Delete|Del|Insert|Ins|Home|End|PgUp|PgDown|Up|Down|Left|Right|Numpad0|NumpadIns|Numpad1|NumpadEnd|Numpad2|NumpadDown|Numpad3|NumpadPgDown|Numpad4|NumpadLeft|Numpad5|NumpadClear|Numpad6|NumpadRight|Numpad7|NumpadHome|Numpad8|NumpadUp|Numpad9|NumpadPgUp|NumpadDot|NumpadDel|NumLock|NumpadDiv|NumpadMult|NumpadAdd|NumpadSub|NumpadEnter|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|LWin|RWin|Control|Ctrl|Alt|Shift. As a hotkey (Shift::) it fires upon release unless it has the tilde prefix. Corresponds to the + hotkey prefix.|LControl|LCtrl|RCtrl|RControl|LShift|RShift|LAlt|RAlt|Browser_Back|Browser_Forward|Browser_Refresh|Browser_Stop|Browser_Search|Browser_Favorites|Browser_Home|Volume_Mute|Volume Down|Volume_Up|Media_Next|Media_Prev|Media_Stop|Media_Play_Pause|Launch_Mail|Launch_Media|Launch_App1|Launch_App2|AppsKey|PrintScreen|CtrlBreak|Pause|Break|Help|Sleep|SCnnn|VKnnn|Joy1|Joy2|Joy3|Joy4|Joy5|Joy6|Joy7|Joy8|Joy9|Joy10|Joy11|Joy12|Joy13|Joy14|Joy15|Joy16|Joy17|Joy18|Joy19|Joy20|Joy21|Joy22|Joy23|Joy24|Joy25|Joy26|Joy27|Joy28|Joy29|Joy30|Joy31|Joy32|JoyX|JoyY|JoyZ|JoyR|JoyU|JoyV|JoyPOV|JoyName|JoyButtons|JoyAxes|JoyInfo)(?=$|[^\\w])"
-    name: ".ahk.definition.keys"
-  }
   # Hotstrings
   {
     match: ":([*?CcOoRrTtXxZz]|[Zz]0|[Tt][0]|[Pp][0-9]+|[Rr]0|SI|SE|SP|[Bb]0|[Cc]0|[Cc]1|[Kk][0-9]+)*:(.*?)::(.*)"
@@ -35,8 +30,13 @@ patterns: [
   }
   # Hotkeys
   {
-    match: "([#^!+&<>*~$\\s\\w])+::"
+    match: "([^:])+::"
     name: ".ahk.definition.hotkey"
+  }
+  # Keys
+  {
+    match: "(?<=^|[^\\w])(LButton|RButton|MButton|XButton1|XButton2|WheelDown|WheelUp|WheelLeft|WheelRight|CapsLock|Space|Tab|Enter|Return|Escape|Esc|Backspace|BS|ScrollLock|Delete|Del|Insert|Ins|Home|End|PgUp|PgDown|Up|Down|Left|Right|Numpad0|NumpadIns|Numpad1|NumpadEnd|Numpad2|NumpadDown|Numpad3|NumpadPgDown|Numpad4|NumpadLeft|Numpad5|NumpadClear|Numpad6|NumpadRight|Numpad7|NumpadHome|Numpad8|NumpadUp|Numpad9|NumpadPgUp|NumpadDot|NumpadDel|NumLock|NumpadDiv|NumpadMult|NumpadAdd|NumpadSub|NumpadEnter|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|F13|F14|F15|F16|F17|F18|F19|F20|F21|F22|F23|F24|LWin|RWin|Control|Ctrl|Alt|Shift. As a hotkey (Shift::) it fires upon release unless it has the tilde prefix. Corresponds to the + hotkey prefix.|LControl|LCtrl|RCtrl|RControl|LShift|RShift|LAlt|RAlt|Browser_Back|Browser_Forward|Browser_Refresh|Browser_Stop|Browser_Search|Browser_Favorites|Browser_Home|Volume_Mute|Volume Down|Volume_Up|Media_Next|Media_Prev|Media_Stop|Media_Play_Pause|Launch_Mail|Launch_Media|Launch_App1|Launch_App2|AppsKey|PrintScreen|CtrlBreak|Pause|Break|Help|Sleep|SCnnn|VKnnn|Joy1|Joy2|Joy3|Joy4|Joy5|Joy6|Joy7|Joy8|Joy9|Joy10|Joy11|Joy12|Joy13|Joy14|Joy15|Joy16|Joy17|Joy18|Joy19|Joy20|Joy21|Joy22|Joy23|Joy24|Joy25|Joy26|Joy27|Joy28|Joy29|Joy30|Joy31|Joy32|JoyX|JoyY|JoyZ|JoyR|JoyU|JoyV|JoyPOV|JoyName|JoyButtons|JoyAxes|JoyInfo)(?=$|[^\\w])"
+    name: ".ahk.definition.keys"
   }
   # Remapping
   {
@@ -139,4 +139,7 @@ repository: {
       }
     ]
   }
+}
+comments: {
+  start: "; "
 }

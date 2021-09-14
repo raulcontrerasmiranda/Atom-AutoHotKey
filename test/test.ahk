@@ -53,6 +53,20 @@ SendInput, 12345678
 :o:foo::bar
 A^::b
 
+#`::
+return
+
+#1::
+return
+
++F1::
+Send {Up}
+return
+
+F1::
+DoSomething()
+return
+
 this_is_a_label:
 
 %Var%
