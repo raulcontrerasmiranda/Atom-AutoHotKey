@@ -15,6 +15,31 @@ patterns: [
     match: "((?:[\\s])|^);.*"
     name: ".ahk.comment.line"
   }
+  # Strings
+  {
+    match: "(\")([^\"]|[\"][\"])*(\")"
+    name: ".ahk.definition.string"
+    captures: {
+      0: {
+        patterns: [
+          {
+            include: "#string_escapes"
+          }
+        ]
+      }
+      1: {
+        name: ".ahk.definition.string.start"
+      }
+      3: {
+        name: ".ahk.definition.string.end"
+      }
+    }
+    patterns: [
+      {
+        include: "#string_escapes"
+      }
+    ]
+  }
   # Hotstrings
   {
     match: ":([*?CcOoRrTtXxZz]|[Zz]0|[Tt][0]|[Pp][0-9]+|[Rr]0|SI|SE|SP|[Bb]0|[Cc]0|[Cc]1|[Kk][0-9]+)*:(.*?)::(.*)"
@@ -30,7 +55,7 @@ patterns: [
   }
   # Hotkeys
   {
-    match: "([^:])+::"
+    match: "[^:\\s]+::"
     name: ".ahk.definition.hotkey"
   }
   # Keys
@@ -75,31 +100,6 @@ patterns: [
   {
     match: "(?<=^|[^\\w])(A_[A-Z]\\w+|[Cc]lipboard|ClipboardAll|ComSpec|ErrorLevel|ProgramFiles)(?=$|[^\\w])"
     name: ".ahk.definition.variable.built-in"
-  }
-  # Strings
-  {
-    match: "(\")([^\"]|[\"][\"])*(\")"
-    name: ".ahk.definition.string"
-    captures: {
-      0: {
-        patterns: [
-          {
-            include: "#string_escapes"
-          }
-        ]
-      }
-      1: {
-        name: ".ahk.definition.string.start"
-      }
-      3: {
-        name: ".ahk.definition.string.end"
-      }
-    }
-    patterns: [
-      {
-        include: "#string_escapes"
-      }
-    ]
   }
   # Values
   {

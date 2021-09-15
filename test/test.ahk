@@ -47,6 +47,10 @@ switch value {
 }
 Goto, lol
 SendInput, 12345678
+Send, "String with ::"
+Send ::
+Send ":o:foo::bar"
+Send :o:foo::bar
 
 #^::
 ::foo::bar
