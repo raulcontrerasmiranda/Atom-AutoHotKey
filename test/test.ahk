@@ -71,8 +71,21 @@ F1::
 DoSomething()
 return
 
+:*:;ahk::AutoHotKey
+
 this_is_a_label:
 
 %Var%
 
 WheelLeft::Right
+
+WinActive("yeet")
+
+Send #{Tab}
+
+exampleFunction(parameterA=8)
+{
+    msgBox % parameterA "This function name has no color."
+}
+
+SendInput {Media_Stop}
