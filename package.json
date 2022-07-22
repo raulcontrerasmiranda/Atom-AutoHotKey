@@ -1,6 +1,6 @@
 {
-  "name": "atm-ahk-highlight",
-  "version": "1.4.4",
+  "name": "atm-ahk",
+  "version": "1.4.3",
   "description": "AutoHotKey grammar, styles, and autocomplete",
   "main": "./lib/main.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/raulcontrerasmiranda/Atom-AutoHotKey.git"
+    "url": "https://github.com/raulcontrerasmiranda/Atom-AutoHotKey."
   },
   "keywords": [
     "ahk",
