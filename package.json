@@ -1,5 +1,5 @@
 {
-  "name": "atm-ahk",
+  "name": "atom-ahk",
   "version": "1.4.3",
   "description": "AutoHotKey grammar, styles, and autocomplete",
   "main": "./lib/main.js",
