@@ -1,6 +1,6 @@
 {
   "name": "atm-ahk-highlight",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "AutoHotKey grammar, styles, and autocomplete",
   "main": "./lib/main.js",
   "scripts": {
