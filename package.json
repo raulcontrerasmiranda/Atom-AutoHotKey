@@ -1,5 +1,5 @@
 {
-  "name": "atom-autohotkey",
+  "name": "atom-ahk/highlight",
   "version": "1.4.3",
   "description": "AutoHotKey grammar, styles, and autocomplete",
   "main": "./lib/main.js",
